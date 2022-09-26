@@ -15,8 +15,7 @@ import {MatButtonModule} from '@angular/material/button';
 
 //Forms
 import{FormsModule} from'@angular/forms';
-
-
+import{ReactiveFormsModule} from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -48,6 +47,7 @@ import { NotFoundComponent } from './views/not-found/not-found.component';
     MatSidenavModule,
     MatDialogModule,
     MatButtonModule,
+    ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
     

@@ -5,6 +5,7 @@ import { PokemonServiceService } from './../../servicos/pokemon-service.service'
 import { Component, OnInit, Input } from '@angular/core';
 import { Pokemon } from 'src/app/interface/pokemon.interface';
 import { tap, zip } from 'rxjs';
+import { FormGroup,FormControl } from '@angular/forms';
 
 
 
@@ -15,17 +16,22 @@ import { tap, zip } from 'rxjs';
 })
 export class PokedexComponent implements OnInit {
   name: string = '';
+  formulario !: FormGroup;
   mostraDiv: boolean = false;
   erro!: number;
   pokemon!: Pokemon;
   description!: PokemonDescricao;
   msg:string = '';
+  nome = new FormControl('')
+  
 
   constructor(public pokemonService: PokemonServiceService, private dialog: MatDialog) { }
-
+  
 
   ngOnInit(): void {
-
+    this.formulario = new FormGroup({
+      nome:new FormControl()
+    })
   }
 
 

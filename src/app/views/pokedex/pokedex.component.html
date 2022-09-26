@@ -3,11 +3,14 @@
         <div class="busca">
                 <h2>Pesquisar</h2>
             <div class="input">
-                <input type="text" name="nome" [(ngModel)]="name">
-                <!---(input)="mapeando($event)"-->
+                <form>
+                <input type="text" name="nome" [(ngModel)]="name" [formControl]="nome">
+            </form>
+                
                 <button mat-raised-button (click)="getPokemon()"><i class="material-icons v-midle">search</i></button>
             </div>
-            <p>{{this.msg}}</p>
+            <p>{{msg}}</p>
+            <p>{{nome.value}}</p>
         </div>
 
             <div class="cards" *ngIf="mostraDiv">
