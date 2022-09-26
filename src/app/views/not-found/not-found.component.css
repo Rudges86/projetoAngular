@@ -1,0 +1,11 @@
+mat-card{
+    margin-bottom: 25px;
+}
+
+mat-card img{
+    height: 350px;
+}
+
+.mensagem{
+    text-align: center;
+}

@@ -1,0 +1,39 @@
+.container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.busca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+    padding: 25px;
+}
+
+.busca .input {
+    width: 80%;
+    display: flex;
+}
+
+.busca > p{
+    color: red;
+    position: relative;
+    right:10%;
+    font-size: 12px;    
+}
+
+.input input {
+    height: 30px;
+    margin-right: 1%;
+    width: 80%;
+}

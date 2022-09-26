@@ -1,0 +1,21 @@
+.mat-toll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    gap: 15px;
+    align-items: center;
+}
+.container span a{
+    color:#FFFF;
+    text-decoration: none;
+    padding: 10px;
+    transition: 1.5s;
+}
+
+.container span a:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0,0.3);
+    border-radius: 5px;
+}

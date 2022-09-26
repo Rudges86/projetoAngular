@@ -1,0 +1,21 @@
+<main class="main">
+    <div class="container">
+        <div class="busca">
+                <h2>Pesquisar</h2>
+            <div class="input">
+                <input type="text" name="nome" [(ngModel)]="name">
+                <!---(input)="mapeando($event)"-->
+                <button mat-raised-button (click)="getPokemon()"><i class="material-icons v-midle">search</i></button>
+            </div>
+            <p>{{this.msg}}</p>
+        </div>
+
+            <div class="cards" *ngIf="mostraDiv">
+                <app-cards [pokemon]="pokemon" [descricao]="description"></app-cards>
+            </div>
+  
+        <div *ngIf="erro == 404">
+            <app-not-found></app-not-found>
+        </div>
+    </div>
+</main>
